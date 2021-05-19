@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'redux-saga'
+import { Provider } from 'react-redux'
+import createSagaMiddleware from 'redux-saga'
 import { logger } from 'redux-logger'
 
 import rootReducer from './src/reducers/_root.reducer'
